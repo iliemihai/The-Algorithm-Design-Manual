@@ -1,0 +1,7 @@
+Res:
+    We have a binary tree. My first solution is to use two doble lists with the same head, the root of the binary tree will be placed in the head of the two lists. When inserting a new node in the tree, we insert it's value in one of the lists by keeping the lists sorted(we can do that in O(log n) time by binary search), and when deleting a node from the tree, we also remove it from the lists. We can keep two pointers for the end of both lists, one of them will track the minimum, and the other maximum. The pointers will be updated at each insert or delete in O(log n) time, but will give min or max in O(1) IT IS WRONG BECAUSE INSERT IN DOUBLE LINKED LIST IN O(N) > O(LOG N) AND NO BINARY SEARCH ON LINKED LISTS
+
+Simple solution
+We maintain two pointers min and max which we will update at each insert and delete with the currently minimum and maximum in O(1) time.
+Complicated solution:
+We can have two min heap ,max heap  for which insert is O(log n) delete O(log n) and find_min or find_max is O(1). 
