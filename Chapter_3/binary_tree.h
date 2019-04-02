@@ -16,7 +16,6 @@ public:
 	BinaryTree<T> *right;
 	int left_node_count;
 
-private:
 	T data;
 };
 #endif

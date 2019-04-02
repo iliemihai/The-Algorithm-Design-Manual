@@ -84,7 +84,7 @@ void middle2(struct Node* first)
 	struct Node* ptr2 = first;
 
 	if(first!=NULL)
-    {
+	{
         while(ptr2 != NULL && ptr2->next != NULL)
         {
     	    ptr1 = ptr1->next;
